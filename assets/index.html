@@ -19,7 +19,11 @@
                     </div>
                     <div class="card-body">
                         <form method="post" action="https://sbcheckout.payfort.com/FortAPI/paymentPage" id="form1">
+                            <input type="hidden" name="service_command" value="TOKENIZATION">
                             <input type="hidden" name="signature" id="signature" value="" required>
+                            <input type="hidden" name="language" value="en">
+                            <input type="hidden" name="currency" value="EGP">
+                            <input type="hidden" name="return_url" value="http://localhost:3000/api-success">
                             <div class="form-group">
                                 <label for="merchant_reference">Merchant Reference</label>
                                 <input type="text" class="form-control" name="merchant_reference"

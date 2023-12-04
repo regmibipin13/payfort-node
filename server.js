@@ -180,7 +180,7 @@ app.post('/signature',(req, res) => {
     const str = sha2String(data);
     const concatenatedString = shaRequestPassphrase + str + shaRequestPassphrase;
     const hash = CryptoJS.SHA256(concatenatedString).toString();
-    res.json({signature:hash});
+    res.json({signature:hash, merchant_identifier:process.env.MERCHANT_IDENTIFIER, access_code: process.env.ACCESS_CODE});
 });
 
 
