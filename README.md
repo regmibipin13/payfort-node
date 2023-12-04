@@ -2,27 +2,27 @@
 
 ## Installation
 
-** Step 1 **
+Step 1
 ```
   git clone ...
 ```
 
-** Step 2 **
+Step 2
 ```
 cd project_folder
 ```
 
-** Step 3 ***
+Step 3
 ```
 Create .env file and save the necessary keys and information (Mac- touch .env)
 ```
 
-** Step 4 **
+Step 4
 ```
 npm install && npm run dev
 ```
 
-** Step 5 **
+Step 5
 ```
 http://localhost:3000
 ```
